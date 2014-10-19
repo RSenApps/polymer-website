@@ -1,10 +1,121 @@
 paper-tabs::shadow #selectionBar {
   background-color: #e51c23;
 }
-body
+html
 {
 	font-family: RobotoDraft;
+	height:100%;
+}
+
+body
+{
+	margin:0; padding:0; height:100%;
 }
 paper-tab::shadow #ink {
   color: #e51c23;
+}
+div.topContainer
+{
+	background-color:#009688; 
+	margin: 0; 
+	padding-top: 50px; 
+	height: 250px; 
+	width: 100%;
+}
+div.nameContainer
+{
+	width: 500px; 
+	height: 100px; 
+	background-color: white;
+}
+div.descriptionContainer
+{
+	display:inline-block; 
+	width: 400px; height: 70px; 
+	margin-top:30px; 
+	background-color: white;
+}
+div.cardsection
+{
+	width: 80%; margin-left:100px; height: auto; margin-top:30px; background-color: white; padding-bottom:10px;
+}
+div.projectCardHeader
+{
+	background-color: #3f51b5;
+}
+div.hackathonCardHeader
+{
+	background-color:#795548;
+}
+div.workCardHeader
+{
+	background-color:#607d8b
+}
+div.projectsTabPage
+{
+	background-color: #eeeeef; height:auto; width: 100%;
+}
+div.hackathonsTabPage
+{
+	background-color: #eeeeef; height:auto; width: 100%;
+}
+div.workTabPage
+{
+	background-color: #eeeeef; height:auto; width: 100%;
+}
+img.cardlogo
+{
+	display: inline-block; margin-top:15px; margin-bottom:15px; margin-left:15px; width:70px; height:70px;
+}
+img.me
+{
+	display: inline-block; 
+	margin-top:5px; 
+	margin-left:15px; 
+	width:90px; 
+	height:90px;
+}
+h1 
+{
+	display: inline-block; 
+	vertical-align:top; 
+	margin-top:30px; 
+	margin-left:30px;
+}
+h2
+{
+	margin-top:20px; 
+	margin-left:15px;
+	font-style:italic;
+}
+h3
+{
+	display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px; color:white
+}
+p
+{
+	margin:20px;
+}
+
+paper-fab
+{
+	display:inline-block; 
+	margin-left:20px;
+}
+table
+{
+	width:100%;
+}
+paper-tab
+{
+	color:white;
+}
+paper-tabs
+{
+	background-color: #009688
+}
+core-animated-pages
+{
+	width:100%;
+	height:100%;
 }

@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<title>Ryan Senanayake</title>
 	<!-- 1. Load platform.js for polyfill support. -->
-    <script src="../bower_components/platform/platform.js"></script>
+    <script src="bower_components/platform/platform.js"></script>
 
     <!-- 2. Use an HTML Import to bring in the element. -->
 	 <link rel="import" href="bower_components/font-roboto/roboto.html"/>
@@ -20,155 +20,51 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+
 
 <link href="bower_components/core-animated-pages/transitions/slide-from-right.html" rel="import">
 
 </head>
-<body unresolved style = "margin:0; padding:0">
-	<div  style="background-color:#3f51b5; margin: 0; padding-top: 50px; height: 250px; width: 100%;">
-		 <div style="width: 500px; height: 100px; background-color: white;">
-			<paper-shadow z="4"></paper-shadow>
-			<img alt="Ryan Senanayake" id="me" src="images/me.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-			<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;"><b>Ryan Senanayake</b></h1>
-		</div>
-		<div>
-			<div style="display:inline-block; width: 400px; height: 70px; margin-top:30px; background-color: white;">
-				<paper-shadow z="3"></paper-shadow>
-				<h2 style="margin-top:20px; margin-left:15px;"><i>Teen Entrepeneur. Coder. Maker</i></h1>
+<body>
+	<core-scroll-header-panel style="height:100%" keepCondensedHeader noReveal condensedHeaderHeight="50%">
+		<div class="core-header">
+			<div class="topContainer">
+				 <div class="nameContainer">
+					<paper-shadow z="4"></paper-shadow>
+					<img alt="Ryan Senanayake" id="me" src="images/me.png" class="me" />
+					<h1>Ryan Senanayake</h1>
+				</div>
+				<div>
+					<div class="descriptionContainer">
+						<paper-shadow z="3"></paper-shadow>
+						<h2>Teen Entrepeneur. Coder. Maker.</h1>
+					</div>
+					<a href="http://www.github.com/RSenApps"><paper-fab icon="social:post-github"></paper-fab></a>
+					<paper-fab icon="android"></paper-fab>
+					<paper-fab icon="hardware:chromecast"></paper-fab>
+					<paper-fab icon="hardware:phone-iphone"></paper-fab>
+
+				</div>
+				
 			</div>
-			<a href="http://www.github.com/RSenApps"><paper-fab icon="social:post-github" style="display:inline-block; margin-left:20px; "></paper-fab></a>
-			<paper-fab icon="android" style="display:inline-block; margin-left:20px; "></paper-fab>
-			<paper-fab icon="hardware:chromecast" style="display:inline-block; margin-left:20px; "></paper-fab>
-			<paper-fab icon="hardware:phone-iphone" style="display:inline-block; margin-left:20px; "></paper-fab>
-
-		</div>
 		
-	</div>
-	<polymer-element name="x-page-1" noscript>
-		<template>
-		  <div style="background-color: #eeeeef; height:800px; width: 100%;">
-							<p> Projects </p>
-							<table style="width:100%">
-								  <tr>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-								  </tr>
-								 
-							</table>
-						</div>
-		</template>
-	</polymer-element>
-	<polymer-element name="x-page-2" noscript>
-		<template>
-		  <div style="background-color: #607d8b; height:800px; width: 100%;">
-							<p> Hackathons </p>
-							<table style="width:100%">
-								  <tr>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-								  </tr>
-								 
-							</table>
-						</div>
-		</template>
-	</polymer-element>
-	<polymer-element name="x-page-3" noscript>
-		<template>
-		  <div style="background-color: #ffc107; height:800px; width: 100%;">
-							<p> In Progress </p>
-							<table style="width:100%">
-								  <tr>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-									<td>
-										<div style="width: 500px; margin-left:100px; height: 350px; margin-top:30px; background-color: white;">
-											<paper-shadow z="2"></paper-shadow>
-											<div style="background-color: #009688">
-												<img alt="Open Mic+" src="images/logo.png" style="display: inline-block; margin-top:5px; margin-left:15px; width:90px; height:90px;" />
-												<h1 style="display: inline-block; vertical-align:top; margin-top:30px; margin-left:30px;">Open Mic+</h1>
-											</div>
-											<p style="margin:20px"> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
-											<hr/>
-											<p style="margin:20px">Google Now, Everywhere.
-												With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
-										</div>
-									</td>
-								  </tr>
-								 
-							</table>
-						</div>
-		</template>
-	</polymer-element>
-	<paper-tabs id="paperTabs" selected="0" style="background-color: #009688">
-			  <paper-tab id="projects">Projects</paper-tab>
-			  <paper-tab id="hackathons">Hackathons</paper-tab>
-			  <paper-tab id="inprogress">In Progress</paper-tab>
+			<paper-tabs id="paperTabs" selected="0">
+				  <paper-tab id="projects">Projects</paper-tab>
+				  <paper-tab id="hackathons">Hackathons</paper-tab>
+				  <paper-tab id="inprogress">In Progress</paper-tab>
 			</paper-tabs>
-	 <core-animated-pages style="width:100%; height:100%;" id="pages" selected="{{paperTabs.selected}}" transitions="slide-from-right">
-			<x-page-1></x-page-1>
-			<x-page-2></x-page-2>
-			<x-page-3></x-page-3>
+		</div>
+		<div content>
+			 <core-animated-pages id="pages" selected="{{paperTabs.selected}}" transitions="slide-from-right">
+					<x-page-1></x-page-1>
+					<x-page-2></x-page-2>
+					<x-page-3></x-page-3>
 
-	</core-animated-pages>
+			</core-animated-pages>
+		</div>
+	</core-scroll-header-panel>
 	<script>
 	var tabs = document.querySelector('paper-tabs');
 	var pages = document.querySelector('core-animated-pages');
@@ -177,5 +73,291 @@
 	  pages.selected = tabs.selected;
 	});
 	</script>
+	<polymer-element name="x-page-1" noscript>
+			<template>
+			<link rel="stylesheet" type="text/css" href="style.css" />
+
+				<div class="projectsTabPage">
+					<table>
+						  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						 <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						  			  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="projectCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+					</table>
+				</div>
+			</template>
+		</polymer-element>
+		<polymer-element name="x-page-2" noscript>
+			<template>
+					<link rel="stylesheet" type="text/css" href="style.css" />
+
+				<div class="hackathonsTabPage">
+					<table>
+						  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						  			  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="hackathonCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+					
+						 
+					</table>
+				</div>
+			</template>
+		</polymer-element>
+			<polymer-element name="x-page-3" noscript>
+			<template>
+					<link rel="stylesheet" type="text/css" href="style.css" />
+
+				<div class="workTabPage">
+					<table>
+						  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						  			  <tr>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+							<td>
+								<div class="cardsection">
+									<paper-shadow z="2"></paper-shadow>
+									<div class="workCardHeader">
+										<img alt="Open Mic+" src="images/logo.png" class="cardlogo" />
+										<h3>Open Mic+</h3>
+									</div>
+									<p> Featured on XDA, LifeHacker, SlashGear, Android Community, Android Spin, Droid Life, IntoMobile, and more!</p>
+									<hr/>
+									<p>Google Now, Everywhere.
+										With Open Mic+ for Google Now, access all the commands from anywhere on your phone, while driving, or while away from your phone! Simply say "Okay Google", wave your hand, or shake your phone. Screen on, screen off Google Now will be ready to listen.</p>
+								</div>
+							</td>
+						  </tr>
+						
+						 
+					</table>
+				</div>
+			</template>
+		</polymer-element>
 </body>
 </html>
