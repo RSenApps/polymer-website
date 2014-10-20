@@ -22,7 +22,7 @@ paper-tab.workTab::shadow #ink {
 }
 div.topContainer
 {
-	background-color:#009688; 
+	background-color:#3f51b5; 
 	margin: 0; 
 	padding-top: 50px; 
 	height: 250px; 
@@ -118,7 +118,7 @@ paper-tab
 }
 paper-tabs
 {
-	background-color: #009688
+	background-color: #3f51b5
 }
 core-scroll-header-panel
 {
