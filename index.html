@@ -19,11 +19,14 @@
 		<link rel="import" href="bower_components/core-icons/communication-icons.html"/>
 
 	<link rel="import" href="bower_components/paper-tabs/paper-tabs.html"/>
+		<link rel="import" href="bower_components/paper-ripple/paper-ripple.html"/>
+
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html"/>
 <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html"/>
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html"/>
+<link rel="import" href="bower_components/core-animation/core-animation.html"/>
 
 
 <link href="bower_components/core-animated-pages/transitions/slide-from-right.html" rel="import"/>
@@ -32,7 +35,9 @@
 <body>
 	<core-scroll-header-panel keepCondensedHeader noReveal condensedHeaderHeight="50%">
 		<div class="core-header">
-			<div class="topContainer">
+			<div id="header" class="topContainer">
+			<paper-ripple id="ripple" fit></paper-ripple>
+			
 				 <div class="nameContainer">
 					<paper-shadow z="4"></paper-shadow>
 					<img alt="Ryan Senanayake" id="me" src="images/me.png" class="me" />
@@ -55,9 +60,9 @@
 			</div>
 		
 			<paper-tabs id="paperTabs" selected="0">
-				  <paper-tab id="projects">Projects</paper-tab>
-				  <paper-tab id="hackathons">Hackathons</paper-tab>
-				  <paper-tab id="inprogress">In Progress</paper-tab>
+				  <paper-tab id="projectTab" class="projectTab">Projects</paper-tab>
+				  <paper-tab id="hackathonTab" class="hackathonTab">Hackathons</paper-tab>
+				  <paper-tab id="workTab" class="workTab">In Progress</paper-tab>
 			</paper-tabs>
 		</div>
 		<div content>
@@ -71,11 +76,80 @@
 	</core-scroll-header-panel>
 	<script>
 	var tabs = document.querySelector('paper-tabs');
+	var projectTab = document.getElementById('projectTab');
+	var hackathonTab = document.getElementById('hackathonTab');
+	var workTab = document.getElementById('workTab');
 	var pages = document.querySelector('core-animated-pages');
-
+	var ripple = document.getElementById('ripple');
+	var header = document.getElementById('header');
 	tabs.addEventListener('core-select',function(){
 	  pages.selected = tabs.selected;
 	});
+	hackathonTab.addEventListener('click', function() {
+	ripple.upAction();
+	var offset = getOffset(hackathonTab);
+	
+		ripple.downAction({x: offset.left + hackathonTab.offsetWidth/2, y: offset.top}); //hackathonTab.offset().left + hackathonTab.width/2);
+		
+		var animation = new CoreAnimation();
+		animation.duration = 500;
+		animation.fill="forwards";
+		animation.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#795548'}];
+		animation.target=header;
+		animation.play();
+	var animation2 = new CoreAnimation();
+		animation2.duration = 500;
+		animation2.fill="forwards";
+		animation2.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#795548'}];
+		animation2.target=tabs;
+		animation2.play();
+	});
+	projectTab.addEventListener('click', function() {
+	var offset = getOffset(projectTab);
+	ripple.upAction();
+		ripple.downAction({x: offset.left + projectTab.offsetWidth/2, y: offset.top}); //hackathonTab.offset().left + hackathonTab.width/2);
+		
+		var animation = new CoreAnimation();
+		animation.duration = 500;
+		animation.fill="forwards";
+		animation.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#3f51b5'}];
+		animation.target=header;
+		animation.play();
+	var animation2 = new CoreAnimation();
+		animation2.duration = 500;
+		animation2.fill="forwards";
+		animation2.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#3f51b5'}];
+		animation2.target=tabs;
+		animation2.play();
+	});
+	workTab.addEventListener('click', function() {
+	ripple.upAction();
+	var offset = getOffset(workTab);
+		ripple.downAction({x: offset.left + workTab.offsetWidth/2, y: offset.top}); //hackathonTab.offset().left + hackathonTab.width/2);
+		
+		var animation = new CoreAnimation();
+		animation.duration = 500;
+		animation.fill="forwards";
+		animation.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#607d8b'}];
+		animation.target=header;
+		animation.play();
+	var animation2 = new CoreAnimation();
+		animation2.duration = 500;
+		animation2.fill="forwards";
+		animation2.keyframes = [{"backgroundColor": header.backgroundColor}, {"backgroundColor": '#607d8b'}];
+		animation2.target=tabs;
+		animation2.play();
+	});
+	function getOffset( el ) {
+    var _x = 0;
+    var _y = 0;
+    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+        _x += el.offsetLeft - el.scrollLeft;
+        _y += el.offsetTop - el.scrollTop;
+        el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+}
 	</script>
 	<polymer-element name="x-page-1" noscript>
 			<template>
