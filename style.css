@@ -53,15 +53,15 @@ div.workCardHeader
 }
 div.projectsTabPage
 {
-	background-color: #eeeeef; height:auto; width: 100%;
+	background-color: #eeeeef; height:auto; width: 100%; padding-bottom:100px;
 }
 div.hackathonsTabPage
 {
-	background-color: #eeeeef; height:auto; width: 100%;
+	background-color: #eeeeef; height:auto; width: 100%; padding-bottom:100px;
 }
 div.workTabPage
 {
-	background-color: #eeeeef; height:auto; width: 100%;
+	background-color: #eeeeef; height:auto; width: 100%; padding-bottom:100px;
 }
 img.cardlogo
 {
@@ -114,8 +114,7 @@ paper-tabs
 {
 	background-color: #009688
 }
-core-animated-pages
+core-scroll-header-panel
 {
-	width:100%;
 	height:100%;
 }
